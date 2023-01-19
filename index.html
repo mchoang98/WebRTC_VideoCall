@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Web RTC</title>
+</head>
+<body>
+    <div class="camera-preview">
+        <video id="camera" autoplay></video>
+        <img src="" id="photo" alt="">
+
+    </div>
+
+    <div class="action-bar">
+        
+        <button id="start" onclick="start()">
+            <!-- icon -->
+            <img src="./assets/icons/play.svg" alt="play">
+
+
+        </button>
+        <button id="stop" onclick="stop()">
+            <!-- icon -->
+            <img src="./assets/icons/stop.svg" alt="stop">
+        </button>
+        <button id="capture" onclick="takePhoto()">
+            <!-- icon -->
+            <img src="./assets/icons/capture.svg" alt="capture">
+        </button>
+    </div>
+    
+</body>
+<!-- import sweet alert 2-->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="./js/main.js"></script>
+
+</html>
